@@ -30,5 +30,44 @@
 
     </header>
 
+    <main>
+        <div class="container">
+            <div class="todo-list-container" data-todo-container></div>
+            <div class="filter-items">
+                <span><span data-tasks-left>0</span> item(s) left</span>
+                <div class="items-tab">
+                    <div class="filter-option">
+                        <input
+                        type="radio"
+                        name="filter"
+                        id="all"
+                        checked
+                        data-radio-input="all"
+                        />
+                        <label for="all" class="active">All</label>
+                    </div>
+                    <div class="filter-option">
+                        <input
+                        type="radio"
+                        name="filter"
+                        id="active"
+                        data-radio-input="active"
+                        />
+                        <label for="active">Active</label>
+                    </div>
+                    <div class="filter-option">
+                        <input
+                        type="radio"
+                        name="filter"
+                        id="completed"
+                        data-radio-input="completed"
+                        />
+                        <label for="completed">Completed</label>
+                </div>
+            </div>
+            <button class="btn-clear" data-btn-completed>Clear Completed</button>
+        </div>
+    </main>
+
 </body>
 </html>
