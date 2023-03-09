@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32*32"
+    href="./images/favicon-32*32.png"
     />
+
     <title>ToDo App</title>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    
 </head>
 <body>
     <header data-header>
@@ -68,6 +76,17 @@
             <button class="btn-clear" data-btn-completed>Clear Completed</button>
         </div>
     </main>
+    <!-- Dynamic New Task Generated-->
+    <template id="task-template">
+        <div class="todo-item" data-todo-item>
+            <label class="box">
+                <input type="checkbox" data-btn-checkbox />
+                <span class="mark"></span>
+            </label>
+            <p data-task-text></p>
+            <button class="btn-delete" data-btn-delete></button>
+        </div>
+    </template>
 
 </body>
 </html>
